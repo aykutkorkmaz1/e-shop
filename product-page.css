@@ -1,0 +1,301 @@
+* {
+  overflow: visible;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.nav {
+  position: relative;
+  background-color: blueviolet;
+  overflow: hidden;
+}
+
+.nav div {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-right {
+  margin-right: 30px;
+  float: right;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 0px;
+  color: #fff;
+}
+
+.dropdown-bag {
+  padding: 5px;
+  border: 3px solid transparent;
+  background-color: transparent;
+
+  transition: 0.5s;
+}
+
+.dropdown-bag:hover {
+  transition: 0.5s;
+  border-bottom: 3px solid #fff;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  padding: 30px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  width: 350px;
+  height: 480px;
+}
+
+.product-infos {
+  padding: 20px;
+  width: 500px;
+  height: auto;
+}
+
+.price-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 5px;
+
+  padding: 10px;
+
+  box-shadow: 5px 5px 10px blueviolet;
+}
+
+.item-name {
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.product-price {
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.desc {
+  text-align: left;
+  margin-top: 30px;
+  border-radius: 5px;
+
+  padding: 10px;
+
+  box-shadow: 5px 5px 10px blueviolet;
+  font-weight: 600;
+}
+
+.buy-sector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  vertical-align: middle;
+  padding: 10px;
+
+  margin-top: 20px;
+}
+
+.box {
+  display: inline;
+  vertical-align: middle;
+}
+
+.box-text {
+  font-size: 20px;
+}
+
+.button {
+  align-items: right;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+
+  vertical-align: middle;
+
+  background-color: transparent;
+  border: 2px solid #181818;
+  border-radius: 3px;
+}
+
+.button:hover {
+  transition: 0.5s;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 40px;
+}
+.shipping {
+  display: flex;
+  flex-direction: row;
+  position: left;
+  justify-content: space-evenly;
+
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.stock {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+
+  border-radius: 5px;
+  padding: 10px;
+
+  box-shadow: 5px 5px 10px green;
+}
+
+.cargo {
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+
+  border-radius: 5px;
+  padding: 10px;
+
+  box-shadow: 5px 5px 10px blueviolet;
+}
+
+.divider {
+  max-width: 600px;
+  border-top: 3px solid #181818;
+}
+
+.other-ps {
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding: 20px;
+}
+
+.item {
+  width: 380px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border: 2px solid black;
+  border-radius: 5px;
+
+  transition: 0.5s;
+}
+
+.item:hover {
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+
+  transition: 0.5s;
+}
+
+.image {
+  width: 200px;
+  height: 100px;
+}
+
+.item-text {
+  color: #181818;
+  display: inline-block;
+  margin: 0px;
+  padding: 10px;
+}
+
+.item-header {
+  font-size: 16px;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.indicators {
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+
+.best-price-icon {
+  margin: 0;
+  width: auto;
+  height: auto;
+
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: green;
+  font-size: 12px;
+
+  transition: 0.3s;
+}
+
+.best-price-icon:hover {
+  color: green;
+  background-color: transparent;
+
+  transition: 0.3s;
+}
+
+.sale-icon {
+  margin: 0;
+  width: auto;
+  height: auto;
+
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: red;
+  font-size: 12px;
+
+  transition: 0.3s;
+}
+
+.sale-icon:hover {
+  color: red;
+  background-color: transparent;
+
+  transition: 0.3s;
+}

@@ -1,0 +1,312 @@
+* {
+  overflow: visible;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.nav {
+  position: relative;
+  background-color: blueviolet;
+  overflow: hidden;
+}
+
+.nav div {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-right {
+  margin-right: 30px;
+  float: right;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 0px;
+  color: #fff;
+}
+
+.dropdown-bag {
+  padding: 5px;
+  border: 2px solid transparent;
+  background-color: transparent;
+
+  transition: 0.5s;
+}
+
+.dropdown-bag:hover {
+  transition: 0.5s;
+  border: 2px solid #fff;
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 5px #fff;
+}
+
+/*
+.nav-item {
+  text-decoration: none;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: 0.5s;
+}
+
+.nav-item:hover {
+  transition: 0.5s;
+  color: blueviolet;
+}
+*/
+
+.sale-indicator {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 0;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.left-sidebar {
+  position: left;
+
+  background-color: transparent;
+  max-width: 220px;
+  height: auto;
+  margin: 45px 0 0 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 10px;
+  border: 2px solid #181818;
+}
+
+.s-item-bg {
+  text-align: left;
+  background-color: transparent;
+  padding: 20px;
+
+  transition: 0.3s;
+}
+
+.s-item-bg:hover {
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.sidebar-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  color: #181818;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  padding: 20px;
+}
+
+.best-price-icon {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  right: 10px;
+
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: green;
+  font-size: 13px;
+
+  animation-name: blink-best-price;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: 0.3s;
+}
+
+@keyframes blink-best-price {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sale-icon {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 10px;
+
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: red;
+  font-size: 13px;
+
+  animation-name: blink-sale;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: 0.3s;
+}
+
+@keyframes blink-sale {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.item {
+  position: relative;
+
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 250px;
+  height: auto;
+  padding: 25px;
+
+  margin-left: 30px;
+  margin-top: 25px;
+
+  transition: 0.5s;
+}
+
+.item:hover {
+  transition: 0.5s;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+}
+
+.item-text {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.price {
+  margin: 0px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.item-header {
+  margin: 0px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.description {
+  text-align: left;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.product-image {
+  margin: 0 auto 0 auto;
+  width: 250px;
+  height: 150px;
+}
+
+.buy-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  vertical-align: baseline;
+
+  margin: 0px;
+  padding: 10px;
+}
+
+.buy-button {
+  align-items: right;
+  width: 60px;
+  height: 30px;
+  font-size: 15px;
+  transition: 0.5s;
+
+  vertical-align: middle;
+
+  background-color: transparent;
+  border: 2px solid #181818;
+  border-radius: 3px;
+}
+
+.buy-button:hover {
+  transition: 0.5s;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 40px;
+}
+
+/*
+.footer {
+  margin: 50px auto 0px auto;
+  background-color: #181818;
+  width: auto;
+  height: 100px;
+  align-items: center;
+
+  position: static;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+*/
